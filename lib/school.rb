@@ -19,8 +19,10 @@ class School
   end
 
   def sort
+    new_roster = {}
     @roster.each do |a, b|
-      b.sort
+      new_roster[a] << b.sort
     end
+    new_roster
   end
 end
