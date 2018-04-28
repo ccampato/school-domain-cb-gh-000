@@ -19,7 +19,7 @@ class School
   end
 
   def sort
-    new_roster = Hash.new
+    new_roster = {}
     @roster.each do |a, b|
       new_roster[a] = b.sort
     end
